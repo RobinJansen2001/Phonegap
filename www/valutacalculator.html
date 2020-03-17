@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>valuta calculator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/valutacalculator.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<h1>Valuta calculator</h1>
+<form action="" id="converter">
+    <div class="form-group">
+        Waarde:
+        <input type="number" min="0" class="form-control" name="amount">
+    </div>
+
+
+    <div class="form-group">
+        Van:
+        <select class="custom-select" name="from">
+            <option value="PLN">PLN</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        Naar:
+        <select class="custom-select" name="to">
+            <option value="PLN">PLN</option>
+            <option value="USD" selected>USD</option>
+            <option value="EUR">EUR</option>
+        </select>
+    </div>
+
+    <input type="submit" class="btn btn-primary" value="Omzetten">
+</form>
+<br>
+<p id="output"></p>
+
+<script src="js/valutacalculator.js"></script>
+</body>
+</html>
